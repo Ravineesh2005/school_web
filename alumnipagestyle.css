@@ -1,0 +1,440 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #1a2a6c;
+            --secondary: #b21f1f;
+            --accent: #ff8a00;
+            --dark: #0f2027;
+            --light: #f8f9fa;
+        }
+
+
+        #button-container, #logo {
+            position: absolute;
+            top: 20%;
+          ;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--dark), #203a43, #2c5364);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding-bottom: 50px;
+        }
+
+        .header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: #4db8ff;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #4db8ff, #1a75ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .quote-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 70px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+            filter: blur(5px) brightness(0.4);
+            z-index: -1;
+        }
+
+        #quote {
+            font-size: 2.5rem;
+            font-weight: 300;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.4;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+            font-style: italic;
+            transition: opacity 0.5s ease;
+        }
+
+        #author {
+            font-size: 1.6rem;
+            margin-top: 25px;
+            font-weight: 300;
+            opacity: 0.9;
+            transition: opacity 0.5s ease;
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-header {
+            margin: 60px 0 35px;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+            position: relative;
+            padding: 0 20px;
+            background: linear-gradient(90deg, #4db8ff, #1a75ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            left: 20px;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
+            border-radius: 3px;
+        }
+
+        
+        .scroll-container {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 20px 0;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .scroll-container::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 4px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #ff9e33;
+        }
+
+        .cards-container {
+            display: inline-flex;
+            gap: 40px;
+            padding: 10px;
+            animation: scrollCards 30s linear infinite;
+        }
+
+        @keyframes scrollCards {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 306px;
+            height: 378px;
+            perspective: 1200px;
+            cursor: pointer;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform-style: preserve-3d;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border-radius: 18px;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .alumni-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.5s;
+        }
+
+        .flip-card:hover .alumni-img {
+            transform: scale(1.2);
+        }
+
+        .alumni-name {
+            font-size: 1.9rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .alumni-year {
+            font-size: 1rem;
+            color: #ddd;
+            font-weight: 400;
+            display: hidden;
+        }
+
+        .alumni-id {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 300;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(45deg, #1a2a6c, #2c3e50);
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .alumni-info {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        .alumni-role {
+            font-size: 1.55rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .alumni-email {
+            font-size: 1.1rem;
+            word-break: break-all;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 400;
+        }
+
+        .alumni-bio {
+            font-size: 1rem;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            font-weight: 300;
+            padding: 0 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.55rem;
+            transition: all 0.3s ease;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .instagram { background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); }
+        .phone { background: linear-gradient(45deg, #00c853, #1e88e5); }
+        .whatsapp { background: linear-gradient(45deg, #25d366, #128c7e); }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            font-size: 1.8rem;
+            color: #aaa;
+            background: rgba(0, 0, 0, 0.4);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 1000px) {
+            .flip-card {
+                width: 290px; /* 5% reduction */
+                height: 359px;
+            }
+            
+            .alumni-img {
+                width: 152px;
+                height: 152px;
+            }
+            
+            .alumni-name {
+                font-size: 1.8rem;
+            }
+            
+            .alumni-role {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .flip-card {
+                width: 275px; /* 10% reduction */
+                height: 340px;
+            }
+            
+            .alumni-img {
+                width: 144px;
+                height: 144px;
+            }
+            
+            .alumni-name {
+                font-size: 1.7rem;
+            }
+            
+            .alumni-role {
+                font-size: 1.4rem;
+            }
+            
+            #quote {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2.3rem;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .flip-card {
+                width: 260px; /* 15% reduction */
+                height: 321px;
+            }
+            
+            .alumni-img {
+                width: 136px;
+                height: 136px;
+            }
+            
+            .alumni-name {
+                font-size: 1.6rem;
+            }
+            
+            .alumni-role {
+                font-size: 1.3rem;
+            }
+            
+            .quote-container {
+                padding: 50px 15px;
+            }
+            
+            #quote {
+                font-size: 1.6rem;
+            }
+            
+            #author {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            footer {
+                font-size: 1.2rem;
+            }
+        }

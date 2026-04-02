@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPS ARJUNPUR - Student Portal</title>
+    <link rel="stylesheet" href="studentspagestyle.css">
+    <link rel="stylesheet" href="homebtnstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     
+    
+    
+    <div class="formula-bg" id="formulasBg"></div>
+    
+    <header>
+          <div class="button-container">
+              <a href="index.html" class="home-button">
+                  <div class="ripple"></div>
+                  <i class="fas fa-home home-icon"></i>
+              </a>
+          </div>
+      
+      
+              <div class="logo" id="logo">
+            <img src="assets/logo.png" alt="kps logo" class="logo-image1" id="logo-image1"/>
+      
+          </div>
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1>KPS ARJUNPUR <span class="animated-title">Student Portal</span></h1>
+            </div>
+            <p>Empowering students with knowledge, fostering growth, and building futures</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-quote-left"></i>
+                Words of Wisdom
+            </h2>
+            <div class="quote-container" id="quotesContainer">
+                <div class="quote-card">
+                    <p class="quote-text" id="currentQuote">The roots of education are bitter, but the fruit is sweet.</p>
+                    <p class="quote-author" id="currentAuthor">Aristotle</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-link"></i>
+                Student Resources
+            </h2>
+            <div class="links-grid" id="linksContainer">
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-calendar-days"></i>
+                    </div>
+                    <div class="link-content">
+                        <div class="link-name" id="currentLinkName">Academic Calendar</div>
+                        <div class="link-desc" id="currentLinkDesc">View important dates and events</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-check"></i>
+                Upcoming Events
+            </h2>
+            <div class="events-container" id="eventsContainer">
+                <div class="event-card">
+                    <div class="event-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span id="currentEventTitle">Annual Science Fair</span>
+                    </div>
+                    <div class="event-date">
+                        <i class="fas fa-clock"></i>
+                        <span id="currentEventDate">August 15, 2025 | 9:00 AM - 3:00 PM</span>
+                    </div>
+                    <div class="event-description" id="currentEventDesc">Students showcase their innovative science projects. Parents and community members are invited to attend.</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">
+                <i class="fas fa-calendar-alt"></i>
+                Academic Timetable
+            </h2>
+            
+            <div class="grade-title">Lower Grade (Nursery to Class II)</div>
+            <div class="timetable-container">
+                <table class="timetable" id="timetable-lower">
+                    <thead>
+                        <tr>
+                            <th class="editable">Time</th>
+                            <th class="editable">7:00-7:45</th>
+                            <th class="editable">7:45-8:30</th>
+                            <th class="editable">8:30-9:15</th>
+                            <th class="editable">9:15-10:00</th>
+                            <th class="editable">10:00-10:45</th>
+                            <th class="editable">10:45-11:30</th>
+                            <th class="editable">11:30-12:15</th>
+                            <th class="editable">12:15-1:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-cell editable">Nursery</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Rhymes</td>
+                            <td class="editable">Art</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Play</td>
+                            <td class="editable">Music</td>
+                            <td class="editable">Story</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">KG-I</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Art</td>
+                            <td class="editable">Rhymes</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Music</td>
+                            <td class="editable">Play</td>
+                            <td class="editable">Story</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">KG-II</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Music</td>
+                            <td class="editable">Play</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Rhymes</td>
+                            <td class="editable">Art</td>
+                            <td class="editable">Story</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class I</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">EVS</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Art</td>
+                            <td class="editable">Music</td>
+                            <td class="editable">Games</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class II</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">EVS</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">Games</td>
+                            <td class="editable">Art</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="grade-title">Grade 3 to 5</div>
+            <div class="timetable-container">
+                <table class="timetable" id="timetable-grade3-5">
+                    <thead>
+                        <tr>
+                            <th class="editable">Time</th>
+                            <th class="editable">7:00-7:45</th>
+                            <th class="editable">7:45-8:30</th>
+                            <th class="editable">8:30-9:15</th>
+                            <th class="editable">9:15-10:00</th>
+                            <th class="editable">10:00-10:45</th>
+                            <th class="editable">10:45-11:30</th>
+                            <th class="editable">11:30-12:15</th>
+                            <th class="editable">12:15-1:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-cell editable">Class III</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">Games</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class IV</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Art</td>
+                            <td class="editable">Music</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class V</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">PE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="grade-title">Grade 6 to 8</div>
+            <div class="timetable-container">
+                <table class="timetable" id="timetable-grade6-8">
+                    <thead>
+                        <tr>
+                            <th class="editable">Time</th>
+                            <th class="editable">7:00-7:40</th>
+                            <th class="editable">7:40-8:20</th>
+                            <th class="editable">8:20-9:00</th>
+                            <th class="editable">9:00-09:40</th>
+                            <th class="editable">09:40-10:20</th>
+                            <th class="editable">10:20-11:00</th>
+                            <th class="editable">11:00-11:40</th>
+                            <th class="editable">11:40-12:20</th>
+                            <th class="editable">12:20-01:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-cell editable">Class VI</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">Sanskrit</td>
+                            <td class="editable">Games</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class VII</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Art</td>
+                            <td class="editable">Music</td>
+                            <td class="editable">PE</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class VIII</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">PE</td>
+                            <td class="editable">Elective</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="grade-title">Grade 9 to 10</div>
+            <div class="timetable-container">
+                <table class="timetable" id="timetable-grade9-10">
+                    <thead>
+                        <tr>
+                            <th class="editable">Time</th>
+                            <th class="editable">7:00-7:40</th>
+                            <th class="editable">7:40-8:20</th>
+                            <th class="editable">8:20-9:00</th>
+                            <th class="editable">9:00-09:40</th>
+                            <th class="editable">09:40-10:20</th>
+                            <th class="editable">10:20-11:00</th>
+                            <th class="editable">11:00-11:40</th>
+                            <th class="editable">11:40-12:20</th>
+                            <th class="editable">12:20-01:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-cell editable">Class IX</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">PE</td>
+                            <td class="editable">Elective</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class X</td>
+                            <td class="editable">English</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">Science</td>
+                            <td class="editable">Hindi</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">S.St</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">Elective</td>
+                            <td class="editable">Revision</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="grade-title">Grade 11-12 (Science Stream)</div>
+            <div class="timetable-container">
+                <table class="timetable" id="timetable-grade11-12-science">
+                    <thead>
+                        <tr>
+                            <th class="editable">Time</th>
+                            <th class="editable">7:00-7:40</th>
+                            <th class="editable">7:40-8:20</th>
+                            <th class="editable">8:20-9:00</th>
+                            <th class="editable">9:00-09:40</th>
+                            <th class="editable">09:40-10:20</th>
+                            <th class="editable">10:20-11:00</th>
+                            <th class="editable">11:00-11:40</th>
+                            <th class="editable">11:40-12:20</th>
+                            <th class="editable">12:20-01:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-cell editable">Class XI Sci</td>
+                            <td class="editable">Physics</td>
+                            <td class="editable">Chemistry</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">English</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">Biology</td>
+                            <td class="editable">Lab</td>
+                            <td class="editable">Elective</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class XII Sci</td>
+                            <td class="editable">Physics</td>
+                            <td class="editable">Chemistry</td>
+                            <td class="editable">Math</td>
+                            <td class="editable">English</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Computer</td>
+                            <td class="editable">Biology</td>
+                            <td class="editable">Lab</td>
+                            <td class="editable">Revision</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="grade-title">Grade 11-12 (Arts Stream)</div>
+            <div class="timetable-container">
+                <table class="timetable" id="timetable-grade11-12-arts">
+                    <thead>
+                        <tr>
+                            <th class="editable">Time</th>
+                            <th class="editable">7:00-7:40</th>
+                            <th class="editable">7:40-8:20</th>
+                            <th class="editable">8:20-9:00</th>
+                            <th class="editable">9:00-09:40</th>
+                            <th class="editable">09:40-10:20</th>
+                            <th class="editable">10:20-11:00</th>
+                            <th class="editable">11:00-11:40</th>
+                            <th class="editable">11:40-12:20</th>
+                            <th class="editable">12:20-01:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="class-cell editable">Class XI Arts</td>
+                            <td class="editable">History</td>
+                            <td class="editable">Political Sci</td>
+                            <td class="editable">Geography</td>
+                            <td class="editable">English</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Economics</td>
+                            <td class="editable">Psychology</td>
+                            <td class="editable">Fine Arts</td>
+                            <td class="editable">Elective</td>
+                        </tr>
+                        <tr>
+                            <td class="class-cell editable">Class XII Arts</td>
+                            <td class="editable">History</td>
+                            <td class="editable">Political Sci</td>
+                            <td class="editable">Geography</td>
+                            <td class="editable">English</td>
+                            <td class="lunch-cell">Lunch</td>
+                            <td class="editable">Economics</td>
+                            <td class="editable">Psychology</td>
+                            <td class="editable">Fine Arts</td>
+                            <td class="editable">Revision</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="saveStatus" class="save-status"></div>
+        </section>
+    </div>
+    
+    <div class="study-section">
+        <button class="study-btn">
+            <span>Study Materials</span>
+            <i class="fas fa-arrow-right"></i>
+            <div class="pulse"></div>
+        </button>
+    </div>
+    
+    <div class="footer">
+        © 2025 KPS ARJUNPUR - All Rights Reserved | Designed with ❤ for Students
+    </div>
+
+    <script src="studentpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+        .header-container {
+            width: 100%;
+            max-width: 1200px;
+            background: rgba(0, 0, 0, 0.85);
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 5px;
+        }
+        
+        /* Animated border */
+        .animated-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                #ff0000, #ff7300, #fffb00, #48ff00, 
+                #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 400% 400%;
+            border-radius: 18px;
+            z-index: 1;
+            animation: gradientBorder 15s ease infinite;
+            filter: blur(2px);
+        }
+        
+        @keyframes gradientBorder {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .head {
+            position: relative;
+            z-index: 2;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+        }
+        
+        .main-title {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin: 15px 0 25px;
+            color: #ffd700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            font-family: 'Arial', sans-serif;
+            position: relative;
+        }
+        
+        .main-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 4px;
+            background: linear-gradient(90deg, #ffd700, #ff8c00, #ffd700);
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+        }
+        
+        .title-container {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .titlebar {
+            position: absolute;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            animation: scroll 15s linear infinite;
+        }
+        
+        .titlebar-hindi { 
+            top: 0;
+            height: 60px;
+            font-size: 2.5rem;
+            color: #ffd700;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .titlebar-english { 
+            top: 60px;
+            height: 35px;
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+            font-family: 'Verdana', sans-serif;
+        }
+        
+        .titlebar span {
+            margin: 0 40px;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .titlebar span::after {
+            content: "•";
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 215, 0, 0.5);
+            font-size: 1.5rem;
+        }
+        
+        .titlebar span:last-child::after {
+            display: none;
+        }
+        
+        .accent-strip {
+            height: 6px;
+            width: 100%;
+            background: linear-gradient(90deg, #ffd700, #ff8c00, #ffd700);
+            margin: 20px 0 10px;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .main-title {
+                font-size: 3rem;
+            }
+            
+            .titlebar-hindi {
+                font-size: 2.2rem;
+                height: 55px;
+            }
+            
+            .titlebar-english {
+                font-size: 1.6rem;
+                height: 30px;
+                top: 55px;
+            }
+            
+            .title-container {
+                height: 90px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .titlebar-hindi {
+                font-size: 1.8rem;
+                height: 50px;
+            }
+            
+            .titlebar-english {
+                font-size: 1.4rem;
+                top: 50px;
+                height: 25px;
+            }
+            
+            .title-container {
+                height: 80px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .titlebar-hindi {
+                font-size: 1.5rem;
+                height: 45px;
+            }
+            
+            .titlebar-english {
+                font-size: 1.2rem;
+                top: 45px;
+                height: 20px;
+            }
+            
+            .title-container {
+                height: 70px;
+            }
+            
+            .titlebar span {
+                margin: 0 25px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .main-title {
+                font-size: 1.7rem;
+            }
+            
+            .titlebar-hindi {
+                font-size: 1.3rem;
+                height: 40px;
+            }
+            
+            .titlebar-english {
+                font-size: 1rem;
+                top: 40px;
+                height: 18px;
+            }
+            
+            .title-container {
+                height: 60px;
+            }
+            
+            .head {
+                padding: 15px;
+            }
+            
+            .titlebar span {
+                margin: 0 15px;
+            }
+            
+            .titlebar span::after {
+                right: -20px;
+            }
+        }

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Wizards</title>
+    <link rel="stylesheet" href="homebtnstyle.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+         :root {
+            --primary-gradient: radial-gradient(rgb(167, 111, 120), rgb(140, 222, 222), rgb(143, 143, 209));
+            --secondary-gradient: radial-gradient(rgb(165, 8, 34, 0.3), rgb(140, 222, 222, 0.3), rgb(143, 143, 209, 0.3));
+            --text-color: #fff;
+            --accent-color: aqua;
+            --border-color: rgb(167, 156, 158);
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --whatsapp: #25D366;
+            --instagram: #E1306C;
+            --linkedin: #0077B5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--primary-gradient);
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        .gap {
+            width: 100%;
+            height: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+       
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .social-btn {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 50px;
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .whatsapp {
+            background-color: var(--whatsapp);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            animation-delay: 0.1s;
+        }
+
+        .instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+            animation-delay: 0.2s;
+        }
+
+        .linkedin {
+            background-color: var(--linkedin);
+            box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+            animation-delay: 0.3s;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background: var(--secondary-gradient);
+            opacity: 1;
+            min-height: 200px;
+            width: 96%;
+            margin: 10px auto;
+            border: 3px solid var(--border-color);
+            border-radius: 30px;
+            padding: 15px;
+            animation: slideIn 1s ease-out;
+        }
+        .logo {
+            margin-left: 50px;
+        }
+
+        .logo img {
+            height: 150px;
+            width: 150px;
+            border-radius: 40%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            animation: pulse 2s infinite;
+        }
+
+        .welcome {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 255, 0.6));
+            margin: 10px auto;
+            padding: 15px;
+            width: 50%;
+            position: relative;
+            border: 10px solid black;
+            border-radius: 0px 30px 0px 30px;
+        }
+
+        .typewriter {
+            color: var(--accent-color);
+            overflow: hidden;
+            font-size: 2rem;
+            opacity: 1;
+            padding: 10px;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            border-right: 3px solid rgb(125, 193, 193);
+            animation: typing 3s steps(200, end) alternate infinite,
+            fadeinravi 6s ease-in-out forwards infinite;
+        }
+
+        .section1 video {
+            width: 95%;
+            max-width: 1400px;
+            display: block;
+            margin: 0 auto;
+            border: 3px solid pink;
+            border-radius: 30px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 1100px;
+            border: 10px solid lightslategray;
+            border-radius: 20px 0 20px 0;
+            padding: 15px;
+        }
+
+        .pic {
+            height: auto;
+            max-height: 500px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 20% 20% 0 50px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .zoom-rotate {
+            opacity: 0;
+            transform-origin: center center;
+            animation: zoomRotateIn 5s steps( 200 , end) alternate infinite;
+        }
+
+        .information {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 15px;
+            flex-direction: column;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .information h1 {
+            height: auto;
+            font-size: 1.8rem;
+            overflow: hidden;
+            animation: typing 4s steps(300, end) alternate infinite;
+            margin-bottom: 10px;
+            margin: auto;
+        }
+
+
+
+        .d_name {
+            font-size: 1.8rem;
+            padding-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        .dynamicravi{
+            animation: fadeinravi 6s ease-in-out forwards infinite;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        a {
+          all: unset;
+        }
+
+        
+        .visit-btn{
+           border: 5px solid antiquewhite;
+           padding: 20px 30px ;
+           border-radius: 40% ;
+           font-size: 1.5em;
+            animation: pulse 2s infinite;
+           font-weight: 600;
+           background: radial-gradient(rgba(26, 27, 26, 0.671) ,rgb(188, 203, 221) ,blue);
+        }
+
+
+        @keyframes typing {
+            0% { width: 100%; }
+          
+            100% { width: 0%; }
+        }
+
+        @keyframes zoomRotateIn {
+            0% {
+                transform: scale(0.3) ;
+                opacity: 0.1;
+            }
+            5% {
+                transform: scale(0.3) ;
+                opacity: 0.1;
+            }
+
+            30% {
+                transform: scale(0.5) rotate(-90deg);
+                opacity: 0.5;
+            }
+            60% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            85% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeinravi {
+
+            0%{ opacity: 0;}
+            20%{ opacity: 1;}
+            80%{ opacity: 1;}
+            100%{ opacity: 0;}
+            
+        }
+
+        @media (max-width: 1024px) {
+     
+            .section{
+                  flex-direction: column;
+            }
+            .logo img {
+                height: 200px;
+                width: 200px;
+            }
+
+            .typewriter {
+                font-size: 1.5rem;
+            }
+        }
+
+        
+                @media (max-width: 768px) {
+                       .section , .container {
+                    flex-direction: column;
+                        }
+        
+                    .pic {
+                        width: 40%;
+                        margin-bottom: 0;
+                        margin-right: 20px;
+                    }
+        
+                    .information {
+                        width: 90%;
+                        text-align: center;
+                    }
+        
+                    .typewriter {
+                        font-size: 1.2rem;
+                    }
+                    .welcome{
+               margin: 5px;
+                width: 70vw;
+           }
+                }
+
+        @media (max-width: 400px) {
+            .typewriter {
+                font-size: .8rem;
+               
+            }
+
+           .section , .container {
+                    flex-direction: column;
+                        }
+             .pic {
+                        width: 90%;
+                      margin: auto;
+                    }
+
+           .welcome{
+               margin: 5px;
+                width: 95vw;
+           }
+            .information h1 {
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+           .section , .container {
+            flex-direction: column;
+           }
+            .d_name {
+                font-size: 1rem;
+            }
+            
+            .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+            
+            .visit-btn {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+     <div class="button-container">
+        <a href="index.html" class="home-button">
+            <div class="ripple"></div>
+            <i class="fas fa-home home-icon"></i>
+        </a>
+    </div>
+
+
+        <div class="logo" id="logo">
+      <img
+        src="assets/logo.png"
+        alt="kps logo"
+        class="logo-image1"
+        id="logo-image1"
+      />
+
+    </div>
+     <header class="animated">
+        <div class="container effect1">
+            <div class="logo"><img src="creater/web-wizards.png" alt="web wizards" class="effect2"></div>
+            <div class="welcome effect3">
+                <h1 class="typewriter text-effect1" id="dynamic-heading">WELCOME To WebWizards</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="gap"></div>
+
+    <!--<section class="section1 video animated">-->
+    <!--    <video autoplay muted loop class="effect1">-->
+    <!--        <source src="creater/video.mp4" type="video/mp4">-->
+    <!--    </video>-->
+    <!--</section>-->
+
+    <div class="gap"></div>
+
+    <section class="section section2 animated effect1">
+        <image><img src="creater/pic1.jpg" alt="ravi thakur" class="zoom-rotate pic pic1 effect2"></image>
+        <div class="information">
+            <h1 class="name text-effect2">Ravineesh_Singh</h1>
+            <h2 id="dynamicravi" class="dynamicravi">Coder</h2>
+            <h2 class="d_name text-effect3">Computer Science and Tecnology</h2>
+            <h2 class="c_name">IIEST SHIBPUR</h2>
+            <div class="social-buttons">
+                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="gap"></div>
+
+    <section class="section section3 animated effect1">
+        <image><img src="creater/pic2sameer.webp" alt="ravi thakur" class="zoom-rotate pic pic2 effect2"></image>
+        <div class="information">
+            <h1 class="name text-effect2">Sameer_Verma</h1>
+            <h2 class="d_name text-effect3">Computer Science and Tecnology</h2>
+            <h2 class="c_name">CSJMU KANPUR</h2>
+            <div class="social-buttons">
+                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="gap"></div>
+
+    <section class="section section4 animated effect1">
+        <image><img src="creater/pic3om.jpg" alt="om" class="zoom-rotate pic pic3 effect2"></image>
+        <div class="information">
+            <h1 class="name text-effect2">Om_Singh</h1>
+            <h2 class="d_name text-effect3">Electronics and Telecommunication</h2>
+            <h2 class="c_name">IET LUCKNOW</h2>
+            <div class="social-buttons">
+                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="gap"></div>
+
+    <section class="section section6 animated effect1">
+        <image><img src="creater/pic6akash.jpg" alt="ravi thakur" class="zoom-rotate pic pic6 effect2"></image>
+        <div class="information">
+            <h1 class="name text-effect2">Aakash_Mishra</h1>
+            <h2 class="d_name text-effect3">Bachelor of Computer Application</h2>
+            <h2 class="c_name">RRPG AMETHI</h2>
+            <div class="social-buttons">
+                <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#" class="visit-btn">-->> Visit Our Website <<--</a>
+    </footer>
+
+    <div class="gap"></div>
+
+    <div class="gap"></div>
+
+    <div class="gap"></div>
+
+    <div class="gap"></div>
+
+    <script>
+        const headings = [
+            "Where Creativity Meets Code",
+            "Welcome to Web Wizards",
+            "Innovate with Style",
+            "Crafting Digital Magic",
+            "Design. Inspire. Repeat."
+        ];
+
+        let index = 0;
+        const headingElement = document.getElementById("dynamic-heading");
+
+        setInterval(() => {
+            index = (index + 1) % headings.length;
+            headingElement.textContent = headings[index];
+        }, 6000);
+
+        const headingsravi = [
+            "Programmer",
+            "Web Developer",
+            " Critical Thinker",
+            " Cybersecurity Expert "
+        ];
+
+        let indexravi = 0;
+        const headingElementravi = document.getElementById("dynamicravi");
+
+        setInterval(() => {
+            indexravi = (indexravi + 1) % headingsravi.length;
+            headingElementravi.textContent = headingsravi[indexravi];
+        }, 6000);
+
+
+    </script>
+
+   
+</body>
+</html>

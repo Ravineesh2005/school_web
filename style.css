@@ -1,0 +1,763 @@
+
+
+.elegap{
+    height: 10px;
+    width: 100%;
+    background-color: #b0b0b0;
+}
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+         #image-box {
+          padding: 0; 
+          min-width: 350px; 
+         }
+
+      .image-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+           
+        }
+      .box-3-image {
+        height: 300px;
+        width: 100%;
+        border-radius: 20px;
+      }
+
+      .box-3-image img {
+
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 40px 5%;
+        }
+
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            z-index: -2;
+        }
+
+        .bg-overlay.active {
+            opacity: 1;
+        }
+
+        .color-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .section-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1s ease;
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .quote-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 40px auto;
+            max-width: 800px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .quote {
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .author {
+            font-size: 1.3rem;
+            text-align: right;
+            opacity: 0.9;
+            animation: fadeIn 1.5s ease;
+        }
+
+ 
+        .section-1 .color-overlay {
+            background-color: rgba(30, 87, 153, 0.85);
+        }
+
+        .welcome-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .welcome-photo {
+            flex: 1;
+            min-width: 300px;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            background-size: cover;
+            background-position: center;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .welcome-photo.left img {
+           
+        
+            background-color: black;
+            animation-delay: 0s;
+        }
+
+        .welcome-photo.right img {
+          
+            background-color: black;
+            position: relative;
+           right: 28%;
+            animation-delay: 1.5s;
+        }
+
+        .intro-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 1s ease;
+        }
+
+        .intro-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .animated-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            height: 60px;
+            overflow: hidden;
+            position: relative;
+            margin: 15px 0;
+        }
+
+        .animated-text span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: textAnimation 12s infinite;
+            opacity: 0;
+            text-align: center;
+        }
+
+        .animated-text span:nth-child(2) {
+            animation-delay: 3s;
+        }
+        
+        .animated-text span:nth-child(3) {
+            animation-delay: 6s;
+        }
+        
+        .animated-text span:nth-child(4) {
+            animation-delay: 9s;
+        }
+
+  
+        .section-2 .color-overlay {
+            background: linear-gradient(lightslategray,rgb(58, 44, 176), rgb(25, 94, 163)); ;
+            opacity: .85;
+        }
+
+        .faculty-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .faculty-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .faculty-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .faculty-name {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .faculty-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+    
+        .section-3 .color-overlay {
+         background: linear-gradient(rgb(201, 118, 228),rgb(122, 110, 232), rgb(69, 219, 216)); 
+            opacity: .85;
+        }
+
+        .lab-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .lab-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lab-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .lab-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+            color: #ffd700;
+        }
+
+        .lab-title {
+            font-size: 1.8rem;
+            color: #ffd700;
+        }
+
+        .lab-features {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .lab-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .lab-features li:last-child {
+            border-bottom: none;
+        }
+
+        .lab-features li i {
+            color: #ffd700;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .section-4 .color-overlay {
+             background: linear-gradient(lightslategray,rgb(58, 44, 176), rgb(25, 94, 163)) ;
+            opacity: .85;
+        }
+
+        .transport-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .transport-info {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: left;
+        }
+
+        .transport-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            display: flex;
+            align-items: center;
+        }
+
+        .transport-title i {
+            margin-right: 15px;
+            font-size: 2rem;
+        }
+
+        .transport-details {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .transport-routes {
+            margin-top: 25px;
+        }
+
+        .route-item {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .route-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-bottom: 8px;
+        }
+
+      
+        .section-5 .color-overlay {
+            background: linear-gradient(lightslategray,rgb(58, 44, 176), rgb(25, 94, 163)); ;
+            opacity: .85;
+        }
+
+        .campus-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px auto;
+            max-width: 1000px;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .feature-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+      
+       
+        footer {
+            background: linear-gradient(135deg, #2c3e50, #1a1a2e);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .button-container2 {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .creators-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ffa502);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            order: 1; 
+        }
+
+        .creators-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .creators-btn:active {
+            transform: translateY(1px);
+        }
+
+   
+
+        .creators-btn:hover::before {
+            left: 0;
+        }
+
+        .arrow-container {
+            display: flex;
+            gap: 8px;
+            order: 2; 
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            border-right: 3px solid #ffa502;
+            border-bottom: 3px solid #ffa502;
+            transform: rotate(-45deg); 
+            animation: blink 1.5s infinite;
+        }
+
+        .arrow:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .arrow:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .arrow:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .copyright {
+            font-size: 2em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+        }
+
+        .copyright::before {
+            content: "© ";
+            font-size: 26px;
+        }
+        
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes textAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            5% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            20% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            25% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+        }
+        
+                 @media (max-width: 1100px) {
+        
+                    .copyright {
+                        font-size: 1.5em;
+                    }
+                 }
+        
+        
+                @media (max-width: 768px) {
+                    .footer-content {
+                        gap: 20px;
+                    }
+                    
+                    .creators-btn {
+                        padding: 10px 20px;
+                        font-size: 14px;
+                    }
+                    
+                    .copyright {
+                        font-size: 1.2em;
+                    }
+                }
+        
+                @media (max-width: 480px) {
+                    footer {
+                        padding: 20px 15px;
+                    }
+                    
+                    .arrow {
+                        width: 15px;
+                        height: 15px;
+                        border-width: 2px;
+                    }
+                    
+                    .button-container2 {
+                        flex-direction: column;
+                    }
+                    
+                    .arrow-container {
+                        order: 2;
+                        margin-top: 10px;
+                    }
+                    
+                    .creators-btn {
+                        order: 1;
+                    }
+        
+                      .copyright {
+                        font-size: 16px;
+                    }
+                }
+        
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2.4rem;
+            }
+            
+            .quote {
+                font-size: 1.5rem;
+            }
+            
+            .welcome-photo {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .quote {
+                font-size: 1.3rem;
+                min-height: 150px;
+            }
+            
+            .welcome-container {
+                flex-direction: column;
+            }
+            
+            .welcome-photo {
+                width: 100%;
+                max-width: 500px;
+            }
+            
+            .intro-box {
+                width: 100%;
+            }
+            
+            .animated-text {
+                font-size: 1.5rem;
+                height: 50px;
+            }
+            
+            .faculty-card, .lab-card, .transport-info {
+                width: 100%;
+                max-width: 500px;
+            }
+
+       
+        }
+
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .quote {
+                font-size: 1.1rem;
+            }
+            
+            .intro-title {
+                font-size: 1.8rem;
+            }
+            
+            .intro-text {
+                font-size: 1rem;
+            }
+            
+            .animated-text {
+                font-size: 1.3rem;
+            }
+            
+            .faculty-name, .lab-title, .transport-title {
+                font-size: 1.5rem;
+            }
+
+        
+        }
+
+        
