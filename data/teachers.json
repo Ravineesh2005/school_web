@@ -1,0 +1,409 @@
+{
+  "senior-faculty": [
+    {
+      "id": "KPSTCH001",
+      "name": "Suman Singh",
+      "subject": "Principal",
+      "role": "Principal",
+      "email": "principal@kpschool.edu",
+      "bio": "With 25+ years in education, dedicated to academic excellence and student development.",
+      "image": "assets/teachers/pic1.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919473770269",
+        "instagram": "https://instagram.com/web.wizaeds.by.ravi",
+        "phone": "+919473770269"
+      }
+    },
+    {
+      "id": "KPSTCH002",
+      "name": "K P Singh",
+      "subject": "Founder",
+      "role": "Founder",
+      "email": "principal@kpschool.edu",
+      "bio": "Specialized in educational administration and student counseling.",
+      "image": "assets/teachers/pic2.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919450395539",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919450395539"
+      }
+    }
+  ],
+  "math-dept": [
+    {
+      "id": "KPSTCH003",
+      "name": "Sarfraj Ahmad",
+      "subject": "Mathematics",
+      "role": "Mathematics",
+      "email": "sarfrajahmad2018@gmail.com",
+      "bio": "15+ teaching experience Passionate about making mathematics accessible and enjoyable for all students.",
+      "image": "assets/teachers/pic3sarfaraj.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919598092162",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919598092162"
+      }
+    },
+    {
+      "id": "KPSTCH004",
+      "name": "Nihal Ahmad",
+      "subject": "Mathematics",
+      "role": "Senior Math Teacher",
+      "email": "nihalahmadpbh123@gmail.com",
+      "bio": "15+ teaching experience Passionate about making mathematics accessible and enjoyable for all students.",
+      "image": "assets/teachers/pic4nihal.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917897815733",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917897815733"
+      }
+    },
+    {
+      "id": "KPSTCH005",
+      "name": "Savinder kumar verma",
+      "subject": "Mathematics",
+      "role": "Mathematics",
+      "email": "savinder25795@gmail.com",
+      "bio": "5+ teaching experience Passionate about making mathematics accessible and enjoyable for all students.",
+      "image": "assets/teachers/pic5.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917084997858",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917084997858"
+      }
+    }
+  ],
+  "science-dept": [
+    {
+      "id": "KPSTCH008",
+      "name": "S K Sharma",
+      "subject": "Physics",
+      "role": "HOD Physics",
+      "email": "sushilved2025@gmail.com",
+      "bio": "+15 years of teaching experience Physics expert with a passion for experimental science and innovation.",
+      "image": "assets/teachers/pic8sk.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917755873781",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917755873781"
+      }
+    },
+    {
+      "id": "KPSTCH013",
+      "name": "Dinesh kumar",
+      "subject": "M.Sc Botany B.ed",
+      "role": "Biology",
+      "email": "sushilved2025@gmail.com",
+      "bio": "+15 years of teaching experience Physics expert with a passion for experimental science and innovation.",
+      "image": "assets/teachers/pic9dinesh.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919918569464",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919918569464"
+      }
+    },
+    {
+      "id": "KPSTCH009",
+      "name": "Sandeep Kumar Patel",
+      "subject": "Chemistry",
+      "role": "HOD Chemistry",
+      "email": "sandeeppatel1308@gmail.com",
+      "bio": "+15 years of teaching experience Chemistry expert with a passion for experimental science and innovation.",
+      "image": "assets/teachers/pic.png",
+      "socials": {
+        "whatsapp": "https://wa.me/917905507518",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917905507518"
+      }
+    },
+    {
+      "id": "KPSTCH010",
+      "name": "Ajeet Pandey",
+      "subject": "Chemistry",
+      "role": "Chemistry",
+      "email": "ajeetpandey1104@gmail.com",
+      "bio": "+5 years of teaching experience Chemistry expert with a passion for experimental science and innovation.",
+      "image": "assets/teachers/pic10ajeet.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919628640281",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919628640281"
+      }
+    },
+    {
+      "id": "KPSTCH011",
+      "name": "Keshari",
+      "subject": "Biology science",
+      "role": "Biology science",
+      "email": "vermakeshari73@gmail.com",
+      "bio": "+5 years of teaching experience.",
+      "image": "assets/teachers/pic11keshari.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919115271722",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919115271722"
+      }
+    },
+    {
+      "id": "KPSTCH012",
+      "name": "Richa Singh",
+      "subject": "Science",
+      "role": "Science",
+      "email": "rsinngh2018@gmail.com",
+      "bio": "+5 years of teaching experience Science expert with a passion for experimental science.",
+      "image": "assets/teachers/pic12.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917355154966",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917355154966"
+      }
+    },
+    {
+      "id": "KPSTCH014",
+      "name": "Aakanksha singh",
+      "subject": "Science",
+      "role": "Science",
+      "email": "singhakanksha3709@gmail.com",
+      "bio": "+5 years of teaching experience .",
+      "image": "assets/teachers/pic13akanksha.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/918172848411",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+918172848411"
+      }
+    }
+  ],
+  "hindi-dept": [
+    {
+      "id": "KPSTCH018",
+      "name": "Sweta Singh",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "swetasingh51979@gmail.com",
+      "bio": "5+ years of teaching experience, Specialized in Hindi literature and creative writing.",
+      "image": "assets/teachers/pic18sweta.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919473862362",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919473862362"
+      }
+    },
+    {
+      "id": "KPSTCH019",
+      "name": "Neelam Singh",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "nilamsin97@gmail.com",
+      "bio": "15+ years of teaching experience, Specialized in Hindi literature and creative writing.",
+      "image": "assets/teachers/pic19neelam.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919792909750",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919792909750"
+      }
+    },
+    {
+      "id": "KPSTCH020",
+      "name": "Mamta Singh",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "mamtaprakash8888@gmail.com",
+      "bio": "10+ years of teaching experience.",
+      "image": "assets/teachers/pic20mamta.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919984661733",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919984661733"
+      }
+    },
+    {
+      "id": "KPSTCH021",
+      "name": "Preeti singh",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "singhpradosh93@gmail.com",
+      "bio": "5+ years of teaching experience.",
+      "image": "assets/teachers/pic21preeti.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919956625494",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919956625494"
+      }
+    },
+    {
+      "id": "KPSTCH022",
+      "name": "Pooja",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "preetpandey34179@gmail.com",
+      "bio": "5+ years of teaching experience.",
+      "image": "assets/teachers/pic22pooja.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919264960165",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919264960165"
+      }
+    },
+    {
+      "id": "KPSTCH023a",
+      "name": "Bhagwat prasad tripathi",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "bhagwattripathi73@gmail.com",
+      "bio": "5+ years of teaching experience, Specialized in Hindi literature and creative writing.",
+      "image": "assets/teachers/pic23abhagwat.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919473634408",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919473634408"
+      }
+    },
+    {
+      "id": "KPSTCH023b",
+      "name": "Shikha singh",
+      "subject": "Hindi",
+      "role": "Hindi",
+      "email": "shikhasingh2882@gmail.com",
+      "bio": "5+ years of teaching experience, Specialized in Hindi literature and creative writing.",
+      "image": "assets/teachers/pic23bshikha.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917054994442",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917054994442"
+      }
+    }
+  ],
+  "arts-dept": [
+    {
+      "id": "KPSTCH023",
+      "name": "Manoj Kumar Singh",
+      "subject": "Social science",
+      "role": "Social science",
+      "email": "manojsinghnevada1986@gmail.com",
+      "bio": "Expert in Social science with 15+ years of teaching experience.",
+      "image": "assets/teachers/pic26manoj.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/916392696873",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+916392696873"
+      }
+    },
+    {
+      "id": "KPSTCH024",
+      "name": "Sarita Tiwari",
+      "subject": "Economics",
+      "role": "Economics",
+      "email": "sarita.vivek2002@gmail.com",
+      "bio": "Expert in Economics with 15+ years of teaching experience.",
+      "image": "assets/teachers/pic24.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919451439132",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919451439132"
+      }
+    },
+    {
+      "id": "KPSTCH025",
+      "name": "Ashish Tiwari",
+      "subject": "Social science",
+      "role": "Social science",
+      "email": "ashishtiwaripur1987@gmail.com",
+      "bio": "Expert in Social Science with 10+ years of teaching experience.",
+      "image": "assets/teachers/pic25ashish.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919628902234",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919628902234"
+      }
+    },
+    {
+      "id": "KPSTCH026",
+      "name": "Shilpa Tiwari",
+      "subject": "Home science",
+      "role": "Home science",
+      "email": "",
+      "bio": "",
+      "image": "assets/teachers/pic.png",
+      "socials": {
+        "whatsapp": "https://wa.me/91",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+91"
+      }
+    }
+  ],
+  "english-dept": [
+    {
+      "id": "KPSTCH028",
+      "name": "Rajesh kumar Mishra",
+      "subject": "English",
+      "role": "HOD English",
+      "email": "rm919@gmail.com",
+      "bio": "Expert in English literature and language pedagogy.",
+      "image": "assets/teachers/pic31rajesh.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917905354067",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917905354067"
+      }
+    }
+  ],
+  "others-dept": [
+    {
+      "id": "KPSTCH035",
+      "name": "Chandra singh",
+      "subject": "English/",
+      "role": "Math, english, sanskrit",
+      "email": "chandrarajnathsingh4321@gmail.com",
+      "bio": "Expert in Math, english, sanskrit and 20 + years of teaching experience.",
+      "image": "assets/teachers/pic35.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919044290090",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919044290090"
+      }
+    },
+    {
+      "id": "KPSTCH036",
+      "name": "NEHA TRIPATHI",
+      "subject": "PRIMARY",
+      "role": "PRIMARY",
+      "email": "nehatripathi7839@gmail.com",
+      "bio": "5+ years of teaching experience",
+      "image": "assets/teachers/pic36.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/917084531257",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+917084531257"
+      }
+    },
+    {
+      "id": "KPSTCH037",
+      "name": "Ruchi mishra",
+      "subject": "Computer",
+      "role": "Computer",
+      "email": "",
+      "bio": "Expert in basic Computer and 5+ years of teaching experience.",
+      "image": "assets/teachers/pic37ruchi.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/919118004366",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+919118004366"
+      }
+    },
+    {
+      "id": "KPSTCH038",
+      "name": "Puja Ojha",
+      "subject": "Computer",
+      "role": "Computer",
+      "email": "pojha4985@gmail.com",
+      "bio": "Expert in basic Computer and 5+ years of teaching experience.",
+      "image": "assets/teachers/pic38pooja.jpg",
+      "socials": {
+        "whatsapp": "https://wa.me/918957175810",
+        "instagram": "https://instagram.com/web.wizards.by.ravi",
+        "phone": "+918957175810"
+      }
+    }
+  ]
+}
+
